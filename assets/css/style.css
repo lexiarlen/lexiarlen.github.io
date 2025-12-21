@@ -62,11 +62,11 @@ a:hover{text-decoration:underline}
   font-weight:600;
 }
 
-.brand-dot{
-  width:9px;
-  height:9px;
-  border-radius:50%;
-  background:var(--accent);
+.brand-icon{
+  width:14px;
+  height:14px;
+  color:var(--accent);
+  opacity:0.7;
 }
 
 .nav-links{
