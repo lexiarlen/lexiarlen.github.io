@@ -79,6 +79,27 @@ a:hover{text-decoration:underline}
   color:var(--text);
 }
 
+/* Subtle inline links (used in content cards) */
+.container a{
+  color: var(--text-muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.container a:hover{
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.card h3{
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+
 .nav-links a.active{
   text-decoration:underline;
   text-underline-offset:5px;
