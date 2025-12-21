@@ -7,9 +7,13 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+
   <div class="nav">
     <div class="nav-inner">
-      <div class="brand"><div class="brand-dot"></div><div>Your Name</div></div>
+      <div class="brand">
+        <div class="brand-dot"></div>
+        <div>Your Name</div>
+      </div>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
@@ -20,42 +24,85 @@
   </div>
 
   <div class="container">
+
+    <!-- ABOUT / BIO -->
     <div class="section">
       <h2>About</h2>
-      <div class="card">
-        <h3>Bio</h3>
-        <p>
-          Write 4–6 sentences. Keep it human + concrete.
-          Example structure: what you study → how you do it → what you care about → where you are based.
-        </p>
-        <p style="margin-top:10px;">
-          Links:
-          <a href="assets/docs/cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
-          · <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
-          · <a href="https://github.com/YOURUSERNAME" target="_blank" rel="noopener">GitHub</a>
-        </p>
+
+      <div
+        class="card"
+        style="
+          display:grid;
+          grid-template-columns: 160px 1fr;
+          gap:20px;
+          align-items:start;
+        "
+      >
+
+        <!-- Photo -->
+        <img
+          src="assets/img/me.jpeg"
+          alt="Photo of Lexi Arlen"
+          style="
+            width:160px;
+            height:160px;
+            object-fit:cover;
+            border-radius:12px;
+            border:1px solid var(--border);
+          "
+        />
+
+        <!-- Bio text -->
+        <div>
+          <h3>Bio</h3>
+          <p>
+            Write 4–6 sentences here. A good structure is:
+            what you study → how you do it → what questions motivate you →
+            where you are currently based.
+          </p>
+
+          <p style="margin-top:10px;">
+            Links:
+            <a href="assets/docs/cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+            ·
+            <a href="https://scholar.google.com/citations?user=51YTITEAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            ·
+            <a href="https://github.com/lexiarlen" target="_blank" rel="noopener">GitHub</a>
+          </p>
+        </div>
+
       </div>
     </div>
 
+    <!-- TEACHING -->
     <div class="section" id="teaching">
-      <h2>Teaching</h2>
+      <h2>Teaching & Mentoring</h2>
+
       <div class="grid">
         <div class="card">
-          <h3>Climate + Python short course</h3>
+          <h3>Climate & Python short course</h3>
           <p>
-            2–3 bullets: audience, what you covered, what students built (e.g., an energy balance model).
+            Two-week online course for high school students from around the world,
+            covering Earth system science, radiation physics, the greenhouse effect,
+            and global climate models, with hands-on Python coding throughout.
           </p>
         </div>
+
         <div class="card">
-          <h3>Mentoring & sections</h3>
+          <h3>Calculus teaching & mentoring</h3>
           <p>
-            1–2 sentences on how you supported different backgrounds and learning goals.
+            Led 20–30 person discussion sections and served as an academic mentor,
+            adapting teaching approaches for students from diverse backgrounds
+            and non-traditional STEM pathways.
           </p>
         </div>
+
         <div class="card">
-          <h3>Open materials</h3>
+          <h3>Teaching philosophy</h3>
           <p>
-            Link slides, notebooks, or a sample assignment if you can share it publicly.
+            I care deeply about how science is taught and who feels welcome
+            participating in it, and I aim to make technical material both
+            rigorous and accessible.
           </p>
         </div>
       </div>
@@ -64,10 +111,12 @@
     <div class="footer">
       © <span id="y"></span> Your Name
     </div>
+
   </div>
 
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
