@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Research</title>
+  <meta name="description" content="Personal research website with projects, publications, and media." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <div class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="brand-dot"></div>
+        <div>Your Name</div>
+      </div>
+      <div class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="media.html">Media</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1>Science, modeling, and field-to-code storytelling.</h1>
+          <p>
+            I work on <strong>[your area]</strong>, with a focus on <strong>[what you build]</strong>.
+            This is a lightweight hub for projects, code, and visuals from my research.
+          </p>
+
+          <div class="badges">
+            <a class="badge" href="assets/docs/cv.pdf" target="_blank" rel="noopener">
+              CV <span>(PDF)</span>
+            </a>
+            <a class="badge" href="https://scholar.google.com/" target="_blank" rel="noopener">
+              Google Scholar
+            </a>
+            <a class="badge" href="https://github.com/YOURUSERNAME" target="_blank" rel="noopener">
+              GitHub
+            </a>
+            <!-- Optional -->
+            <!-- <a class="badge" href="https://www.linkedin.com/in/YOURHANDLE" target="_blank" rel="noopener">LinkedIn</a> -->
+          </div>
+
+          <p class="small" style="margin-top:16px;">
+            Tip: replace the bracketed text and links; drop images into <span class="kbd">assets/img/</span>.
+          </p>
+        </div>
+
+        <div class="hero-media">
+          <!-- Put a nice wide research image here -->
+          <img src="assets/img/hero.jpg" alt="Research image" />
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Featured projects</h2>
+      <p>Pick 2–3 things you want reviewers to notice first.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Project A</h3>
+          <p>One sentence: what question + what you did + why it matters.</p>
+          <div class="meta">
+            <a href="research.html#project-a">Read more</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Project B</h3>
+          <p>One sentence: method/tooling and a concrete outcome.</p>
+          <div class="meta">
+            <a href="research.html#project-b">Read more</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Teaching / outreach</h3>
+          <p>Course, curriculum, workshops, or mentoring highlights.</p>
+          <div class="meta">
+            <a href="about.html#teaching">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Latest visuals</h2>
+      <p>Selected images/videos from papers, simulations, or fieldwork.</p>
+
+      <div class="gallery">
+        <a class="thumb" href="media.html#gallery">
+          <img src="assets/img/photo1.jpg" alt="Visual 1" />
+          <div class="cap">Caption: what we’re looking at</div>
+        </a>
+        <a class="thumb" href="media.html#gallery">
+          <img src="assets/img/photo2.jpg" alt="Visual 2" />
+          <div class="cap">Caption: one clear takeaway</div>
+        </a>
+        <a class="thumb" href="media.html#video">
+          <img src="assets/img/photo3.jpg" alt="Visual 3" />
+          <div class="cap">Caption: click for media page</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer">
+      © <span id="y"></span> Your Name · Built with GitHub Pages
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
