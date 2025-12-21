@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Research</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="nav-inner">
+      <div class="brand"><div class="brand-dot"></div><div>Your Name</div></div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="research.html">Research</a>
+        <a href="media.html">Media</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h2>Research</h2>
+      <p>
+        A short overview of your themes. For example:
+        modeling + observations, sea ice fracture, granular/continuum links, parameterization, etc.
+      </p>
+    </div>
+
+    <hr class="sep" />
+
+    <div class="section" id="project-a">
+      <h2>Project A: Title</h2>
+      <p>
+        3–6 bullets is perfect here: question, approach, result, impact.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <h3>What</h3>
+          <p>What problem you solved, in plain language.</p>
+        </div>
+        <div class="card">
+          <h3>How</h3>
+          <p>Methods/tools (Python, LAMMPS/OVITO, field data, etc.).</p>
+        </div>
+        <div class="card">
+          <h3>Outcome</h3>
+          <p>Paper / dataset / open-source code / figure / metric.</p>
+        </div>
+      </div>
+      <p style="margin-top:12px;">
+        Links:
+        <a href="https://github.com/YOURUSERNAME/YOURREPO" target="_blank" rel="noopener">Code</a>
+        · <a href="#" target="_blank" rel="noopener">Preprint</a>
+        · <a href="media.html#video">Video</a>
+      </p>
+    </div>
+
+    <hr class="sep" />
+
+    <div class="section" id="project-b">
+      <h2>Project B: Title</h2>
+      <p>Same format; keep it scannable.</p>
+      <p>
+        Links:
+        <a href="#" target="_blank" rel="noopener">Code</a>
+        · <a href="#" target="_blank" rel="noopener">Paper</a>
+      </p>
+    </div>
+
+    <hr class="sep" />
+
+    <div class="section">
+      <h2>Publications</h2>
+      <p class="small">If you don’t want to maintain a list, you can just link Google Scholar.</p>
+      <p>
+        <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar profile</a>
+      </p>
+
+      <div class="card">
+        <h3>Optional manual list</h3>
+        <p>
+          Author, A. (Year). Title. <em>Journal</em>.
+          <a href="#" target="_blank" rel="noopener">link</a>
+        </p>
+        <p>
+          Author, A. (Year). Title. <em>Conference</em>.
+          <a href="#" target="_blank" rel="noopener">link</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      © <span id="y"></span> Your Name
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
