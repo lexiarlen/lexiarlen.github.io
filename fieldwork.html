@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lexi Arlen — Fieldwork</title>
+  <meta name="description" content="Fieldwork experiences and photo gallery." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <div class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="brand-dot"></div>
+        <div>Lexi Arlen</div>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a class="active" href="fieldwork.html">Fieldwork</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h2>Fieldwork</h2>
+      <p>
+        Field experiences shape the questions I ask and the models I build.
+        I’m interested in connecting measurements and real-world constraints to process-based modeling.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Selected experiences</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Role</h3>
+          <p>
+            Replace this with a short description of what you did in the field: instrumentation, sampling,
+            logistics, safety, operations, data QA/QC, etc.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Skills</h3>
+          <p>
+            Examples: planning, teamwork, operating in remote environments, documentation, sensor deployment,
+            troubleshooting, data handling.
+          </p>
+        </div>
+        <div class="card">
+          <h3>How it informs my research</h3>
+          <p>
+            One or two sentences about how field constraints/observations feed back into your modeling choices.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="gallery">
+      <h2>Photo gallery</h2>
+      <p>Click any photo to open full size.</p>
+
+      <div class="gallery" style="margin-top:12px;">
+        <a class="thumb" href="assets/img/fieldwork/field1.jpg" target="_blank" rel="noopener">
+          <img src="assets/img/fieldwork/field1.jpg" alt="Fieldwork photo 1" />
+          <div class="cap">Caption: location + what’s happening + why it’s interesting.</div>
+        </a>
+
+        <a class="thumb" href="assets/img/fieldwork/field2.jpg" target="_blank" rel="noopener">
+          <img src="assets/img/fieldwork/field2.jpg" alt="Fieldwork photo 2" />
+          <div class="cap">Caption: instrument / environment / conditions.</div>
+        </a>
+
+        <a class="thumb" href="assets/img/fieldwork/field3.jpg" target="_blank" rel="noopener">
+          <img src="assets/img/fieldwork/field3.jpg" alt="Fieldwork photo 3" />
+          <div class="cap">Caption: a quick story or takeaway.</div>
+        </a>
+
+        <a class="thumb" href="assets/img/fieldwork/field4.jpg" target="_blank" rel="noopener">
+          <img src="assets/img/fieldwork/field4.jpg" alt="Fieldwork photo 4" />
+          <div class="cap">Caption: project / team / moment.</div>
+        </a>
+      </div>
+
+      <p class="small" style="margin-top:12px;">
+        Tip: keep photos under ~1–2 MB each for fast loading. If you want, we can add a second gallery section for
+        “Simulations in the field” or “Behind the scenes.”
+      </p>
+    </div>
+
+    <div class="footer">
+      © <span id="y"></span> Lexi Arlen
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
