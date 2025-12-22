@@ -4,114 +4,336 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lexi Arlen — Research</title>
+  <meta
+    name="description"
+    content="A fast, plain-language walkthrough of a minimal discrete-element sea-ice model—shown through figures (plus an optional video)."
+  />
   <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+    .hero {
+      border-radius: 18px;
+      overflow: hidden;
+      margin-top: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      background: rgba(255,255,255,0.6);
+    }
+    .hero img {
+      display:block;
+      width: 100%;
+      height: clamp(180px, 34vh, 340px);
+      object-fit: cover;
+    }
+    .hero .hero-text{
+      padding: 14px 16px 16px 16px;
+    }
+
+    .figure { margin-top: 12px; }
+    .figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      display:block;
+    }
+    .caption {
+      margin-top: 10px;
+      opacity: 0.92;
+      max-width: 90ch;
+    }
+
+    .thumb-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin-top: 12px;
+    }
+    @media (max-width: 980px) { .thumb-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 640px) { .thumb-grid { grid-template-columns: repeat(2, 1fr); } }
+
+    .thumb-grid figure { margin: 0; }
+    .thumb-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      display:block;
+    }
+    .thumb-grid figcaption {
+      font-size: 0.85em;
+      margin-top: 6px;
+      opacity: 0.85;
+    }
+
+    .video { margin-top: 12px; border-radius: 14px; overflow: hidden; }
+    .video video { width: 100%; height: auto; display:block; border-radius: 14px; }
+  </style>
 </head>
+
 <body>
-<div class="nav">
-  <div class="nav-inner">
+  <!-- NAV -->
+  <div class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M4.93 19.07l14.14-14.14"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+        <div>Lexi Arlen</div>
+      </div>
 
-    <div class="brand">
-      <!-- Snowflake icon -->
-      <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
-        <path
-          d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M4.93 19.07l14.14-14.14"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
-          stroke-linecap="round"
-        />
-      </svg>
-      <div>Lexi Arlen</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="fieldwork.html">Fieldwork</a>
+        <a href="adventures.html">Adventures</a>
+      </div>
     </div>
-
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a class="active" href="research.html">Research</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="fieldwork.html">Fieldwork</a>
-      <a href="adventures.html">Adventures</a>
-    </div>
-
   </div>
-</div>
-
 
   <div class="container">
-    <div class="section">
-      <h2>Research</h2>
-      <p>
-        A short overview of your themes. For example:
-        modeling + observations, sea ice fracture, granular/continuum links, parameterization, etc.
-      </p>
+    <!-- HERO / BANNER -->
+    <div class="hero">
+      <!-- TODO: replace with your banner photo path -->
+      <img
+        src="assets/img/floes.jpg"
+        alt="Sea ice floes viewed from above."
+        loading="eager"
+        fetchpriority="high"
+      />
+      <div class="hero-text">
+        <h1 style="margin:0;">Research</h1>
+        <p style="margin:8px 0 0 0; max-width:90ch;">
+        Sea ice is a critical component of the Earth system, mediating ocean heat uptake, driving the global ocean overturning circulation
+        buffering vulnerable ice shelves from ocean waves, and serving as a key habitat for the 
+        primary producers at the bottom of the food chain up through keystone species like the polar 
+        bear. Through polar amplification, climate change is impacting the polar regions more than 
+        anywhere else in the world. Despite the urgent need for accurate predictions of the future sea ice state,
+        current climate models struggle to reproduce sea ice trends on seasonal and decadal timescales. 
+        These models simulate sea ice as a continuous medium despite the discontinuities arising from fracturing 
+        and floe-floe interactions. Discrete element models (DEMs) can directly resolve these discontinuities, 
+        making them valuable tools for developing parameterizations of subgrid-scale physics to improve 
+        the sea ice momentum budget in climate models. Because DEMs resolve interactions between individual discrete 
+        elements, they are typically computationally expensive and contain many 
+        unconstrained parameters. In this work, we develop, calibrate, and evaluate
+        the performance of a minimal bonded discrete element model for process-based studies, 
+        foregoing some physics for a small parameter space and computational efficiency.
+        </p>
+      </div>
     </div>
 
     <hr class="sep" />
 
-    <div class="section" id="project-a">
-      <h2>Project A: Title</h2>
-      <p>
-        3–6 bullets is perfect here: question, approach, result, impact.
-      </p>
+    <!-- TL;DR -->
+    <div class="section">
       <div class="grid">
         <div class="card">
-          <h3>What</h3>
-          <p>What problem you solved, in plain language.</p>
+          <h3>TL;DR</h3>
+          <p>
+            I built a computationally cheap “bonded floe” model in LAMMPS that reproduces localized failure and
+            Nares Strait–style arch dynamics. Across many simulations, the outcomes fall into four regimes
+            organized by one control parameter: <strong>bond stiffness × critical strain</strong>.
+          </p>
         </div>
         <div class="card">
-          <h3>How</h3>
-          <p>Methods/tools (Python, LAMMPS/OVITO, field data, etc.).</p>
+          <h3>Why a minimal model?</h3>
+          <p>
+            Discrete-element models can be expensive and parameter-heavy. By intentionally keeping the physics (and parameter space)
+            small, we can calibrate cleanly and run large ensembles to learn what controls behavior.
+          </p>
         </div>
         <div class="card">
-          <h3>Outcome</h3>
-          <p>Paper / dataset / open-source code / figure / metric.</p>
+          <h3>What you’ll see below</h3>
+          <p>
+            A figure-first walkthrough: how the DEM works, how damage localizes, how arches form/collapse,
+            how regimes organize, and how fracture patterns compare across discretizations.
+          </p>
         </div>
       </div>
-      <p style="margin-top:12px;">
-        Links:
+    </div>
+
+    <hr class="sep" />
+
+    <!-- 1) DEM concept -->
+    <div class="section" id="fig-dem">
+      <h2>1) What a discrete-element sea-ice model is</h2>
+      <p style="max-width:90ch;">
+        Think of the ice cover as many pieces connected by breakable “bonds.” Bonds carry tension (stretching),
+        contacts carry compression (pushing). Fracture emerges naturally when bonds exceed a critical strain.
+      </p>
+
+      <div class="figure">
+        <img
+          src="assets/img/dem/contact_and_bond_models.png"
+          alt="Two panels showing the bonded force law and a contact force law used in a discrete-element model."
+          loading="lazy"
+        />
+        <p class="caption">
+          <strong>Figure:</strong> Bond and contact force laws. Bonds fail in tension when the strain exceeds a critical value,
+          while contacts transmit compressive forces during collisions.
+        </p>
+      </div>
+    </div>
+
+    <hr class="sep" />
+
+    <!-- 2) Localization -->
+    <div class="section" id="fig-localization">
+      <h2>2) Damage localizes in space and time</h2>
+      <p style="max-width:90ch;">
+        In simple shear, deformation doesn’t accumulate smoothly everywhere. Instead, it concentrates into narrow zones
+        and happens in bursts—consistent with observed sea-ice deformation.
+      </p>
+
+      <div class="figure">
+        <img
+          src="assets/img/dem/fracture_heatmap.png"
+          alt="Figure showing spatial localization of damage along with time series indicating intermittent bursts."
+          loading="lazy"
+        />
+        <p class="caption">
+          <strong>Figure:</strong> Localized, intermittent deformation. The spatial maps show where damage concentrates,
+          and the time series highlights bursty events rather than steady accumulation.
+        </p>
+      </div>
+    </div>
+
+    <hr class="sep" />
+
+    <!-- 3) Arch formation/collapse -->
+    <div class="section" id="fig-arch">
+      <h2>3) Arch formation and collapse in an idealized strait</h2>
+      <p style="max-width:90ch;">
+        In a narrow passage (an idealized Nares Strait geometry), fractured floes can jam into an ice arch that blocks flow.
+        Depending on parameters, the arch can remain stable—or fail suddenly and release the blockage.
+      </p>
+
+      <div class="figure">
+        <img
+          src="assets/img/dem/unstable_strait.png"
+          alt="Sequence of snapshots showing an ice arch forming in a narrow strait and a plot showing a sharp peak in failure rate."
+          loading="lazy"
+        />
+        <p class="caption">
+          <strong>Figure:</strong> A canonical “arch-and-collapse” event. Snapshots show the geometry evolving through time,
+          while the diagnostic time series highlights when failure accelerates.
+        </p>
+      </div>
+    </div>
+
+    <hr class="sep" />
+
+    <!-- 4) Regime collapse -->
+    <div class="section" id="fig-regimes">
+      <h2>4) Four outcomes, organized by one control parameter</h2>
+      <p style="max-width:90ch;">
+        Because the model is computationally cheap, we can run a large ensemble exploring parameter space.
+        Across runs, we observe four outcomes: viscous flow, arch-and-collapse, stable arch formation, and no fracturing.
+        These regimes organize around the product <strong>bond stiffness × critical strain</strong>.
+      </p>
+
+      <div class="figure">
+        <img
+          src="assets/img/dem/regimes.png"
+          alt="Scatter plot of simulations across parameter space with colored points indicating different fracture outcomes."
+          loading="lazy"
+        />
+        <p class="caption">
+          <strong>Figure:</strong> Regime map from an ensemble sweep. Distinct outcomes occupy different regions of parameter space
+          and collapse onto a single combined control parameter.
+        </p>
+      </div>
+    </div>
+
+    <hr class="sep" />
+
+    <!-- 5) Granularity comparison -->
+    <div class="section" id="fig-granularity">
+      <h2>5) Early fracture patterns are consistent across discretizations</h2>
+      <p style="max-width:90ch;">
+        When we vary granularity (how finely the ice is discretized), the earliest fracture structures still emerge in similar ways
+        for regime-averaged behavior—suggesting these patterns are robust, not artifacts of one resolution.
+      </p>
+
+      <div class="figure">
+        <img
+          src="assets/img/dem/longer_tilt_damage.png"
+          alt="Multi-panel comparison showing similar linear fracture features across different smoothing or granularity settings."
+          loading="lazy"
+        />
+        <p class="caption">
+          <strong>Figure:</strong> Fracture feature comparison across granularity/smoothing settings.
+          The earliest linear structures appear in consistent locations and orientations.
+        </p>
+      </div>
+    </div>
+
+    <hr class="sep" />
+
+    <!-- End-state shear images (lowest granularity) -->
+    <div class="section" id="shear-endstates">
+      <h2>End-state fracture patterns (lowest granularity)</h2>
+      <p style="max-width:90ch;">
+        Five snapshots at the end of the simulation for the lowest-granularity shear runs, showing how final fracture patterns differ.
+      </p>
+
+      <div class="thumb-grid">
+        <figure>
+          <img src="assets/img/dem/se87426-s0825.png" alt="End-state shear snapshot at time step s0825 showing fracture pattern." loading="lazy" />
+          <figcaption>(a) s0825</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/dem/se87426-s1923.png" alt="End-state shear snapshot at time step s1923 showing fracture pattern." loading="lazy" />
+          <figcaption>(b) s1923</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/dem/se87426-s2283.png" alt="End-state shear snapshot at time step s2283 showing fracture pattern." loading="lazy" />
+          <figcaption>(c) s2283</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/dem/se87426-s2893.png" alt="End-state shear snapshot at time step s2893 showing fracture pattern." loading="lazy" />
+          <figcaption>(d) s2893</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/dem/se87426-s9834.png" alt="End-state shear snapshot at time step s9834 showing fracture pattern." loading="lazy" />
+          <figcaption>(e) s9834</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <hr class="sep" />
+
+    <!-- OPTIONAL: MP4 slot (kept, but lightweight) -->
+    <div class="section" id="video-shear">
+      <h2>Long shear run (optional video)</h2>
+      <p style="max-width:90ch;">
+        If you want to see the dynamics evolve continuously, add a longer shear MP4 here.
+      </p>
+
+      <div class="video card">
+        <video controls preload="none" poster="assets/img/dem/end_shear55952_915.png">
+          <source src="assets/dem/long_shear.mp4" type="video/mp4" />
+          Sorry—your browser doesn’t support embedded video.
+        </video>
+      </div>
+    </div>
+
+    <hr class="sep" />
+
+    <!-- LINKS -->
+    <div class="section" id="links">
+      <h2>Links</h2>
+      <p>
         <a href="https://github.com/YOURUSERNAME/YOURREPO" target="_blank" rel="noopener">Code</a>
-        · <a href="#" target="_blank" rel="noopener">Preprint</a>
-        · <a href="media.html#video">Video</a>
+        · <a href="#" target="_blank" rel="noopener">Paper / Preprint</a>
+        · <a href="#" target="_blank" rel="noopener">Dataset</a>
       </p>
-    </div>
-
-    <hr class="sep" />
-
-    <div class="section" id="project-b">
-      <h2>Project B: Title</h2>
-      <p>Same format; keep it scannable.</p>
-      <p>
-        Links:
-        <a href="#" target="_blank" rel="noopener">Code</a>
-        · <a href="#" target="_blank" rel="noopener">Paper</a>
-      </p>
-    </div>
-
-    <hr class="sep" />
-
-    <div class="section">
-      <h2>Publications</h2>
-      <p class="small">If you don’t want to maintain a list, you can just link Google Scholar.</p>
-      <p>
-        <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar profile</a>
-      </p>
-
-      <div class="card">
-        <h3>Optional manual list</h3>
-        <p>
-          Author, A. (Year). Title. <em>Journal</em>.
-          <a href="#" target="_blank" rel="noopener">link</a>
-        </p>
-        <p>
-          Author, A. (Year). Title. <em>Conference</em>.
-          <a href="#" target="_blank" rel="noopener">link</a>
-        </p>
-      </div>
     </div>
 
   </div>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
