@@ -182,6 +182,18 @@ a:hover{text-decoration:underline}
   }
 }
 
+/* Force small circular headshot in hero copy */
+.hero-copy .hero-headshot {
+  width: 64px !important;
+  height: 64px !important;
+  max-width: 64px !important;
+  max-height: 64px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+
 .badge{
   padding:8px 12px;
   border-radius:999px;
