@@ -146,6 +146,42 @@ a:hover{text-decoration:underline}
   flex-wrap:wrap;
 }
 
+/* Intro block with headshot + headline */
+.hero-intro {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Circular headshot */
+.hero-headshot {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Keep headline tight */
+.hero-text h1 {
+  margin: 0;
+}
+
+/* Mobile stacking */
+@media (max-width: 700px) {
+  .hero-intro {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero-headshot {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 .badge{
   padding:8px 12px;
   border-radius:999px;
