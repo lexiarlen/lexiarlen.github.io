@@ -4,26 +4,27 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lexi Arlen — Teaching</title>
-  <meta name="description" content="Teaching and mentoring: climate + Python, calculus instruction, and inclusive STEM learning." />
+  <meta name="description" content="Teaching and mentoring: climate + Python summer course and undergraduate research mentoring." />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-<div class="nav">
-  <div class="nav-inner">
+  <!-- NAV -->
+  <div class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <!-- Snowflake icon -->
+        <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M4.93 19.07l14.14-14.14"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
+        </svg>
+        <div>Lexi Arlen</div>
+      </div>
 
-    <div class="brand">
-      <!-- Snowflake icon -->
-      <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
-        <path
-          d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M4.93 19.07l14.14-14.14"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.5"
-          stroke-linecap="round"
-        />
-      </svg>
-      <div>Lexi Arlen</div>
-    </div>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
@@ -35,54 +36,224 @@
   </div>
 
   <div class="container">
+    <!-- INTRO -->
     <div class="section">
       <h2>Teaching</h2>
       <p>
-        I care about how science is taught and who feels welcome participating in it.
-        My teaching focuses on building intuition, connecting concepts to real systems, and giving students tools
-        (often Python) to explore ideas hands-on.
+        STEM is for everyone, and I focus on building confidence through intuition-first explanations and hands-on work.
+        I especially enjoy teaching climate science through computation: students learn the physics, then immediately
+        test ideas by writing code and making figures.
       </p>
     </div>
 
+    <!-- FEATURED: SUMMER COURSE -->
     <div class="section">
-      <h2>Highlights</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Climate + Python short course</h3>
-          <p>
-            Two-week online course for high school students from around the world. Covered Earth system overview,
-            radiation physics, the greenhouse effect, and global climate models. Students coded a simple energy balance
-            model in Python.
-          </p>
-          <div class="meta">
-            <span class="small">Format: remote · intensive · project-based</span>
-          </div>
+      <h2>Featured: Climate + Python short course</h2>
+
+      <div class="card">
+        <div class="meta" style="margin-bottom:10px;">
+          <span class="small">Two-week online · high school students (international) · intensive · project-based</span>
         </div>
 
-        <div class="card">
-          <h3>Calculus discussion sections</h3>
-          <p>
-            Led 20–30 person sections and practiced adapting explanations and pacing to students’ needs.
-            Many students were pursuing non-math majors and needed confidence + mastery to reach their goals.
-          </p>
-          <div class="meta">
-            <span class="small">Format: sections · active problem solving</span>
-          </div>
+        <!-- Course overview (verbatim, as requested) -->
+        <p>
+          Beginning with an introduction to past and present climate change, this course will delve into the radiative physics underlying the greenhouse effect.
+          Students will code their own model of Earth’s energy balance in Python to demonstrate how greenhouse gases raise Earth’s equilibrium temperature.
+          Armed with the physical intuition for anthropogenic climate change, we will discuss the more complex models composing the Coupled Model Intercomparison Project (CMIP) that are used to inform the IPCC reports.
+          Working in teams, students will read research papers to create a final presentation on how the signal of climate change manifests itself on a particular component of the Earth system.
+          By the end of this course, students will feel confident in their ability to discuss the science, nuance, and uncertainty associated with Earth’s changing climate.
+        </p>
+
+        <!-- Materials -->
+        <div style="margin-top:14px;">
+          <h3 style="margin-bottom:8px;">Materials</h3>
+          <ul style="margin:0; padding-left:18px;">
+            <li>
+              <a href="assets/docs/climate_change_syllabus.pdf" target="_blank" rel="noopener">Syllabus (PDF)</a>
+              <span class="small">· downloadable</span>
+            </li>
+            <li>
+              <a href="https://summerinstitutes.spcs.stanford.edu/courses/2026/climate-change-projections-and-uncertainty?source=/2026-courses" target="_blank" rel="noopener">Sign up here for 2026!</a>
+              <span class="small">· Hosted by the Stanford Summer Precollegiate Institute</span>
+            </li>
+            <li>
+              <a href="https://drive.google.com/file/d/1WqZ7wQtQpm9PClYxqiJsKe66cvpDeexE/view?usp=sharing" target="_blank" rel="noopener">Energy balance model exercise (Colab notebook)</a>
+              <span class="small">· interactive</span>
+            </li>
+          </ul>
         </div>
 
-        <div class="card">
-          <h3>Academic mentoring</h3>
-          <p>
-            Supported students from disadvantaged backgrounds through a matched mentoring program.
-            A core goal was changing the narrative from “not a math person” to “I can do this.”
+        <!-- Figures -->
+        <div style="margin-top:16px;">
+          <h3 style="margin-bottom:10px;">Figures from Student Assignments</h3>
+
+          <div class="grid">
+            <!-- Required figure -->
+            <div class="card">
+              <figure style="margin:0;">
+                <img
+                  src="assets/img/teaching/ebm_output.png"
+                  alt="Energy balance model time series of CO2, radiative forcing, and temperature"
+                  style="width:100%; height:auto; border-radius:12px;"
+                  loading="lazy"
+                />
+                <figcaption class="small" style="margin-top:8px;">
+                  Energy balance model output: temperature, radiative forcing, and CO₂.
+                </figcaption>
+              </figure>
+            </div>
+
+            <!-- Optional: ice core figure -->
+            <div class="card">
+              <figure style="margin:0;">
+                <img
+                  src="assets/img/teaching/ice_core_figure.png"
+                  alt="Student figure derived from ice core data"
+                  style="width:100%; height:auto; border-radius:12px;"
+                  loading="lazy"
+                />
+                <figcaption class="small" style="margin-top:8px;">
+                  Student analysis showing 400,000 years of temperature and CO₂ proxy data 
+                  from the Vostok Ice Core. Credit: Sufee Kathane
+                </figcaption>
+              </figure>
+            </div>
+
+            <!-- Optional: ERA5 figure -->
+            <div class="card">
+              <figure style="margin:0;">
+                <img
+                  src="assets/img/teaching/surface_temp_anomaly.png"
+                  alt="Student figure derived from ERA5 temperature data"
+                  style="width:100%; height:auto; border-radius:12px;"
+                  loading="lazy"
+                />
+                <figcaption class="small" style="margin-top:8px;">
+                  Student analysis using ERA5 2m temperature data to plot the 2024 
+                  global surface temperature anomaly.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <p class="small" style="margin-top:10px;">
+            <!-- Tip: delete the optional cards above if you decide not to include them -->
           </p>
-          <div class="meta">
-            <span class="small">Format: 1:1 mentoring · targeted support</span>
+        </div>
+
+        <!-- Feedback -->
+        <div style="margin-top:16px;">
+          <h3 style="margin-bottom:10px;">Student feedback</h3>
+
+          <div class="grid">
+            <div class="card">
+              <p style="margin:0;">
+                “<em>Thank you so much for your support, guidance, and positive energy throughout the course. Your encouragement 
+                  made the learning environment both inspiring and welcoming. The fact that you 
+                  were always ready to help and listen approachable and thoughtful made the learning process much 
+                  more comfortable and enjoyable for us. This experience wouldn’t have been the same without you </em>”
+              </p>
+              <div class="meta"><span class="small">— Student</span></div>
+            </div>
+
+            <div class="card">
+              <p style="margin:0;">
+                “<em>...I really enjoyed the fact that I was comfortable to 
+                  express my knowledge gaps to you and the fact that your answers really helped 
+                  me understand better the topics. Also, your presentations were well prepared 
+                  and I was amazed of how easy some topics can be explained. I will really miss 
+                  you and this wonderful community...</em>”
+              </p>
+              <div class="meta"><span class="small">— Student</span></div>
+            </div>
+
+            <div class="card">
+              <p style="margin:0;">
+                “<em>...It is definitely the summer period to remember. It was hard, 
+                  but I really enjoyed being surrounded by so many scientifically 
+                  related people, so it pushed me to do my best. I learnt a bunch 
+                  of things, and maybe it will take some time to put everything in my head, 
+                  but this knowledge is extremely valuable.</em>”
+              </p>
+              <div class="meta"><span class="small">— Student</span></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- UNDERGRAD MENTORSHIP -->
+    <div class="section">
+      <h2>Undergraduate research mentoring</h2>
+      <p>
+        I mentor undergraduate researchers through end-to-end projects: refining a question, building a reproducible workflow,
+        generating figures, and communicating results clearly.
+      </p>
+
+      <div class="grid">
+        <!-- Project 1 -->
+        <div class="card">
+          <h3>Machine Learning based approach for segmenting sea ice floes from Imagery derived from Synthetic Aperature Radar</h3>
+          <div class="meta" style="margin-bottom:10px;">
+            <span class="small">Undergraduate: <strong>Chloe Cheng</strong> · Summer 2023</span>
+          </div>
+
+          <img
+            src="assets/img/teaching/ug_sar_segmentation.png"
+            alt="Figure from SAR sea-ice segmentation project"
+            style="width:100%; height:auto; border-radius:12px;"
+            loading="lazy"
+          />
+
+          <p style="margin-top:10px;">
+            <strong>Project:</strong> [1–2 sentence description. Example: Trained and evaluated a supervised model to segment sea ice features in SAR imagery,
+            with emphasis on generalization across scenes and robust performance metrics.]
+          </p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card">
+          <h3>Sea ice variability in the Southern Ocean</h3>
+          <div class="meta" style="margin-bottom:10px;">
+            <span class="small">Undergraduate: <strong>Allie Skalnik</strong> · Summer 2024</span>
+          </div>
+
+          <img
+            src="assets/img/teaching/ug_so_variability.png"
+            alt="Figure from Southern Ocean sea-ice variability project"
+            style="width:100%; height:auto; border-radius:12px;"
+            loading="lazy"
+          />
+
+          <p style="margin-top:10px;">
+            <strong>Project:</strong> [1–2 sentence description. Example: Quantified interannual variability of sea ice in the Southern Ocean and related it to
+            large-scale atmospheric patterns using gridded reanalysis and satellite products.]
+          </p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card">
+          <h3>Sea ice dispersion in a discrete element model</h3>
+          <div class="meta" style="margin-bottom:10px;">
+            <span class="small">Undergraduate: <strong>Ella Walsh</strong> · Summer 2025</span>
+          </div>
+
+          <img
+            src="assets/img/teaching/ug_dem_dispersion.png"
+            alt="Figure from sea-ice dispersion discrete element model project"
+            style="width:100%; height:auto; border-radius:12px;"
+            loading="lazy"
+          />
+
+          <p style="margin-top:10px;">
+            <strong>Project:</strong> [1–2 sentence description. Example: Built diagnostics for dispersion and mixing in a sea-ice discrete element model,
+            linking fracture and contact-network evolution to emergent transport.]
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTIONAL: APPROACH (kept short + aligned with your materials) -->
     <div class="section">
       <h2>Teaching approach</h2>
       <div class="card">
@@ -90,21 +261,14 @@
         <p>
           <strong>Conceptual clarity</strong> first, then <strong>technical fluency</strong>, then <strong>independence</strong>.
           I try to (1) define the question, (2) build a physical/mental model, (3) connect it to equations and code,
-          and (4) have students produce something tangible: a derivation, a notebook, a plot, a model.
-        </p>
-        <p style="margin-top:10px;">
-          If you have public materials (slides, notebooks, syllabi), link them here:
-          <a href="#" target="_blank" rel="noopener">Course materials</a>
-          · <a href="#" target="_blank" rel="noopener">Sample notebook</a>
+          and (4) have students produce something tangible: a notebook, a plot, a model, or a presentation.
         </p>
       </div>
     </div>
-
   </div>
 
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
+    // (No footer year element in this page currently; leaving script out to avoid null lookups.)
   </script>
-
 </body>
 </html>
