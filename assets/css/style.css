@@ -193,7 +193,6 @@ a:hover{text-decoration:underline}
   flex-shrink: 0;
 }
 
-
 .badge{
   padding:8px 12px;
   border-radius:999px;
@@ -341,4 +340,17 @@ a:hover{text-decoration:underline}
   border-radius:6px;
   border:1px solid var(--border);
   background:#f4f6fa;
+}
+
+/* --- HARD OVERRIDE: keep headshot small even if img { width:100% } exists --- */
+.hero-copy img.hero-headshot {
+  display: inline-block !important;
+  width: 64px !important;
+  height: 64px !important;
+  max-width: 64px !important;
+  max-height: 64px !important;
+  min-width: 64px !important;
+  min-height: 64px !important;
+  object-fit: cover !important;
+  border-radius: 999px !important;
 }
