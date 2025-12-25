@@ -169,6 +169,64 @@ a:hover{text-decoration:underline}
   margin: 0;
 }
 
+/* ---------- HERO (stacked layout like research page) ---------- */
+
+.hero.hero-stack{
+  overflow: hidden; /* ensures banner respects rounded corners */
+}
+
+.hero-content{
+  padding: 34px;
+}
+
+.hero-banner{
+  width: 100%;
+  height: 320px;           /* adjust banner height here */
+  background: var(--panel);
+  border-top: 1px solid var(--border);
+}
+
+.hero-banner img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Headshot + headline row */
+.hero-intro {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Circular headshot */
+.hero-copy img.hero-headshot{
+  width: 64px !important;
+  height: 64px !important;
+  border-radius: 999px;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: inline-block !important;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.hero-text h1{
+  margin: 0;
+}
+
+/* Mobile tweaks */
+@media (max-width: 700px){
+  .hero-content{ padding: 26px; }
+  .hero-banner{ height: 220px; }
+  .hero-copy img.hero-headshot{
+    width: 56px !important;
+    height: 56px !important;
+  }
+}
+
+
 /* Mobile stacking */
 @media (max-width: 700px) {
   .hero-intro {
