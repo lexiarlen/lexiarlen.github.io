@@ -8,22 +8,23 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-   <div class="nav">
+  <div class="nav">
     <div class="nav-inner">
-        <div class="brand">
-
+      <div class="brand">
         <!-- Snowflake icon -->
         <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M4.93 19.07l14.14-14.14"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"/>
+          <path
+            d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M4.93 19.07l14.14-14.14"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+          />
         </svg>
 
         <!-- Name -->
         <div>Lexi Arlen</div>
-        </div>
+      </div>
 
       <div class="nav-links">
         <a class="active" href="index.html">Home</a>
@@ -36,55 +37,54 @@
   </div>
 
   <div class="container">
+
     <div class="hero hero-stack">
+      <!-- Top content: photo left, everything else right -->
+      <div class="hero-content">
+        <div class="hero-copy">
 
-    <!-- Top content: headshot + copy -->
-    <div class="hero-content">
-      <div class="hero-copy">
+          <div class="hero-intro">
+            <img
+              src="assets/img/me.jpeg"
+              alt="Lexi Arlen portrait"
+              class="hero-headshot"
+            />
 
-        <div class="hero-intro">
-          <img
-            src="assets/img/me.jpeg"
-            alt="Lexi Arlen portrait"
-            class="hero-headshot"
-          />
+            <div class="hero-text">
+              <h1>Modeling sea ice dynamics across scales.</h1>
 
-          <div class="hero-text">
-            <h1>Modeling sea ice dynamics across scales.</h1>
+              <p>
+                Hello! I’m a 4th-year PhD student in Earth System Science at Stanford University in the Polar Ocean Dynamics
+                Group led by Professor Earle Wilson. I have developed bonded discrete element model for process-based studies of
+                sea ice dynamics. I’m broadly interested in how small-scale local dynamics shape larger-scale climate
+                trends.
+              </p>
+
+              <div class="badges">
+                <a class="badge" href="assets/docs/cv.pdf" target="_blank" rel="noopener">
+                  CV <span>(PDF)</span>
+                </a>
+                <a class="badge" href="https://scholar.google.com/citations?user=51YTITEAAAAJ&hl=en" target="_blank" rel="noopener">
+                  Google Scholar
+                </a>
+                <a class="badge" href="https://github.com/lexiarlen" target="_blank" rel="noopener">
+                  GitHub
+                </a>
+                <a class="badge" href="https://www.linkedin.com/in/alexisarlen" target="_blank" rel="noopener">
+                  LinkedIn
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <p>
-          Hello! I’m a 4th-year PhD student in Earth System Science at Stanford University in the Polar Ocean Dynamics
-          Group led by Professor Earle Wilson. I have developed bonded discrete element model for process-based studies of
-          sea ice dynamics. I’m broadly interested in how small-scale local dynamics shape larger-scale climate
-          trends.
-        </p>
-
-        <div class="badges">
-          <a class="badge" href="assets/docs/cv.pdf" target="_blank" rel="noopener">
-            CV <span>(PDF)</span>
-          </a>
-          <a class="badge" href="https://scholar.google.com/citations?user=51YTITEAAAAJ&hl=en" target="_blank" rel="noopener">
-            Google Scholar
-          </a>
-          <a class="badge" href="https://github.com/lexiarlen" target="_blank" rel="noopener">
-            GitHub
-          </a>
-          <a class="badge" href="https://www.linkedin.com/in/alexisarlen" target="_blank" rel="noopener">
-            LinkedIn
-          </a>
         </div>
       </div>
+
+      <!-- Bottom banner: boat image -->
+      <div class="hero-banner">
+        <img src="assets/img/hero.jpeg" alt="Sea ice / polar research visual" />
+      </div>
     </div>
-
-    <!-- Bottom banner: boat image -->
-    <div class="hero-banner">
-      <img src="assets/img/hero.jpeg" alt="Sea ice / polar research visual" />
-    </div>
-
-  </div>
-
 
     <div class="section">
       <h2>Explore more</h2>
@@ -122,7 +122,8 @@
       </div>
     </div>
 
-    <!-- <div class="section">
+    <!--
+    <div class="section">
       <h2>Latest visuals</h2>
       <p>A few recent favorites from simulations and the field.</p>
 
@@ -140,12 +141,15 @@
           <div class="cap">Caption: click for the gallery</div>
         </a>
       </div>
-    </div> -->
+    </div>
+    -->
 
   </div>
 
   <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
+    // If you ever add an element with id="y" for the year, this will work.
+    const y = document.getElementById("y");
+    if (y) y.textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
