@@ -107,6 +107,7 @@
       />
       <div class="hero-text">
         <h1 style="margin:0;">A minimal bonded discrete element model for sea ice</h1>
+        <h2 style="margin:0;">Page under construction!</h2>
         <p style="margin:8px 0 0 0; max-width:90ch;">
         Sea ice is a critical component of the Earth system, mediating ocean heat uptake, driving the global ocean overturning circulation
         buffering vulnerable ice shelves from ocean waves, and serving as a key habitat for the 
@@ -134,7 +135,7 @@
         <div class="card">
           <h3>TLDR</h3>
           <p>
-            I built a computationally cheap “bonded floe” model in LAMMPS that reproduces localized failure and
+            We adapetd a computationally cheap bonded discrete element model in LAMMPS that reproduces localized failure and
             Nares Strait–style arch dynamics. Across many simulations, the outcomes fall into four regimes
             organized by one control parameter: <strong>bond stiffness × critical strain</strong>.
           </p>
@@ -142,7 +143,7 @@
         <div class="card">
           <h3>Why a minimal model?</h3>
           <p>
-            Discrete-element models can be expensive and parameter-heavy. By intentionally keeping the physics (and parameter space)
+            Discrete-element models can be expensive and parameter-heavy. By intentionally keeping the physics and parameter space
             small, we can calibrate cleanly and run large ensembles to learn what controls behavior.
           </p>
         </div>
@@ -160,10 +161,9 @@
 
     <!-- 1) DEM concept -->
     <div class="section" id="fig-dem">
-      <h2>1) What a discrete-element sea-ice model is</h2>
+      <h2>1) What is a discrete-element sea-ice model?</h2>
       <p style="max-width:90ch;">
-        Think of the ice cover as many pieces connected by breakable “bonds.” Bonds carry tension (stretching),
-        contacts carry compression (pushing). Fracture emerges naturally when bonds exceed a critical strain.
+        [text]
       </p>
 
       <div class="figure">
@@ -173,7 +173,7 @@
           loading="lazy"
         />
         <p class="caption">
-          <strong>Figure:</strong> Bond and contact force laws. Bonds fail in tension when the strain exceeds a critical value,
+          <strong>Figure:</strong> Bond and contact laws. Bonds resist deformation and fail in tension when the strain exceeds a critical value,
           while contacts transmit compressive forces during collisions.
         </p>
       </div>
@@ -183,10 +183,9 @@
 
     <!-- 2) Localization -->
     <div class="section" id="fig-localization">
-      <h2>2) Damage localizes in space and time</h2>
+      <h2>2) [text]</h2>
       <p style="max-width:90ch;">
-        In simple shear, deformation doesn’t accumulate smoothly everywhere. Instead, it concentrates into narrow zones
-        and happens in bursts—consistent with observed sea-ice deformation.
+        [text]
       </p>
 
       <div class="figure">
@@ -196,8 +195,7 @@
           loading="lazy"
         />
         <p class="caption">
-          <strong>Figure:</strong> Localized, intermittent deformation. The spatial maps show where damage concentrates,
-          and the time series highlights bursty events rather than steady accumulation.
+          <strong>Figure:</strong> [text]
         </p>
       </div>
     </div>
@@ -206,10 +204,9 @@
 
     <!-- 3) Arch formation/collapse -->
     <div class="section" id="fig-arch">
-      <h2>3) Arch formation and collapse in an idealized strait</h2>
+      <h2>3) [text]</h2>
       <p style="max-width:90ch;">
-        In a narrow passage (an idealized Nares Strait geometry), fractured floes can jam into an ice arch that blocks flow.
-        Depending on parameters, the arch can remain stable—or fail suddenly and release the blockage.
+        [text]
       </p>
 
       <div class="figure">
@@ -219,8 +216,7 @@
           loading="lazy"
         />
         <p class="caption">
-          <strong>Figure:</strong> A canonical “arch-and-collapse” event. Snapshots show the geometry evolving through time,
-          while the diagnostic time series highlights when failure accelerates.
+          <strong>Figure:</strong> [text]
         </p>
       </div>
     </div>
@@ -229,11 +225,9 @@
 
     <!-- 4) Regime collapse -->
     <div class="section" id="fig-regimes">
-      <h2>4) Four outcomes, organized by one control parameter</h2>
+      <h2>4) [text]</h2>
       <p style="max-width:90ch;">
-        Because the model is computationally cheap, we can run a large ensemble exploring parameter space.
-        Across runs, we observe four outcomes: viscous flow, arch-and-collapse, stable arch formation, and no fracturing.
-        These regimes organize around the product <strong>bond stiffness × critical strain</strong>.
+        [text]
       </p>
 
       <div class="figure">
@@ -243,8 +237,7 @@
           loading="lazy"
         />
         <p class="caption">
-          <strong>Figure:</strong> Regime map from an ensemble sweep. Distinct outcomes occupy different regions of parameter space
-          and collapse onto a single combined control parameter.
+          <strong>Figure:</strong> [text]
         </p>
       </div>
     </div>
@@ -253,10 +246,9 @@
 
     <!-- 5) Granularity comparison -->
     <div class="section" id="fig-granularity">
-      <h2>5) Early fracture patterns are consistent across discretizations</h2>
+      <h2>5) [text]</h2>
       <p style="max-width:90ch;">
-        When we vary granularity (how finely the ice is discretized), the earliest fracture structures still emerge in similar ways
-        for regime-averaged behavior—suggesting these patterns are robust, not artifacts of one resolution.
+        [text]
       </p>
 
       <div class="figure">
@@ -266,8 +258,7 @@
           loading="lazy"
         />
         <p class="caption">
-          <strong>Figure:</strong> Fracture feature comparison across granularity/smoothing settings.
-          The earliest linear structures appear in consistent locations and orientations.
+          <strong>Figure:</strong> [text]
         </p>
       </div>
     </div>
@@ -276,10 +267,9 @@
 
     <!-- End-state shear images (lowest granularity) -->
     <div class="section" id="shear-endstates">
-      <h2>End-state fracture patterns (lowest granularity)</h2>
+      <h2>[text]</h2>
       <p style="max-width:90ch;">
-        Five snapshots at the end of the simulation for the lowest-granularity shear runs, showing how final fracture patterns differ.
-      </p>
+        [text]
 
       <div class="thumb-grid">
         <figure>
