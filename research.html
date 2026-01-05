@@ -136,8 +136,8 @@
           <h3>TLDR</h3>
           <p>
             We adapetd a computationally cheap bonded discrete element model in LAMMPS that reproduces localized failure and
-            Nares Strait–style arch dynamics. Across many simulations, the outcomes fall into four regimes
-            organized by one control parameter: <strong>bond stiffness × critical strain</strong>.
+            compressive ice arch formation. Across many simulations, the outcomes fall into four regimes
+            represented by one control parameter.
           </p>
         </div>
         <div class="card">
@@ -150,8 +150,8 @@
         <div class="card">
           <h3>What you’ll see below</h3>
           <p>
-            A figure-first walkthrough: how the DEM works, how damage localizes, how arches form/collapse,
-            how regimes organize, and how fracture patterns compare across discretizations.
+            A figure-first walkthrough: how the DEM works, how damage localizes, how fracture patterns compare across different initial conditions, 
+            how ice arches form/collapse, and how the four arch regimes depend on model parameters. 
           </p>
         </div>
       </div>
@@ -180,6 +180,57 @@
     </div>
 
     <hr class="sep" />
+
+        <!-- 2) Granularity comparison -->
+    <div class="section" id="fig-granularity">
+      <h2>2) Deformation localized in space and time under low strain rate. </h2>
+      <p style="max-width:90ch;">
+        [text]
+      </p>
+
+      <div class="figure">
+        <img
+          src="assets/img/dem/longer_tilt_damage.png"
+          alt="Multi-panel comparison showing similar linear fracture features across different smoothing or granularity settings."
+          loading="lazy"
+        />
+        <p class="caption">
+          <strong>Figure:</strong> [text]
+        </p>
+      </div>
+    </div>
+
+    <hr class="sep" />
+
+    <!-- End-state shear images (lowest granularity) -->
+    <div class="section" id="shear-endstates">
+      <h2>[text]</h2>
+      <p style="max-width:90ch;">
+        [text]
+
+      <div class="thumb-grid">
+        <figure>
+          <img src="assets/img/dem/se87426-s0825.png" alt="End-state shear snapshot at time step s0825 showing fracture pattern." loading="lazy" />
+          <figcaption>(a) s0825</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/dem/se87426-s1923.png" alt="End-state shear snapshot at time step s1923 showing fracture pattern." loading="lazy" />
+          <figcaption>(b) s1923</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/dem/se87426-s2283.png" alt="End-state shear snapshot at time step s2283 showing fracture pattern." loading="lazy" />
+          <figcaption>(c) s2283</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/dem/se87426-s2893.png" alt="End-state shear snapshot at time step s2893 showing fracture pattern." loading="lazy" />
+          <figcaption>(d) s2893</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/dem/se87426-s9834.png" alt="End-state shear snapshot at time step s9834 showing fracture pattern." loading="lazy" />
+          <figcaption>(e) s9834</figcaption>
+        </figure>
+      </div>
+    </div>
 
     <!-- 2) Localization -->
     <div class="section" id="fig-localization">
@@ -244,56 +295,7 @@
 
     <hr class="sep" />
 
-    <!-- 5) Granularity comparison -->
-    <div class="section" id="fig-granularity">
-      <h2>5) [text]</h2>
-      <p style="max-width:90ch;">
-        [text]
-      </p>
 
-      <div class="figure">
-        <img
-          src="assets/img/dem/longer_tilt_damage.png"
-          alt="Multi-panel comparison showing similar linear fracture features across different smoothing or granularity settings."
-          loading="lazy"
-        />
-        <p class="caption">
-          <strong>Figure:</strong> [text]
-        </p>
-      </div>
-    </div>
-
-    <hr class="sep" />
-
-    <!-- End-state shear images (lowest granularity) -->
-    <div class="section" id="shear-endstates">
-      <h2>[text]</h2>
-      <p style="max-width:90ch;">
-        [text]
-
-      <div class="thumb-grid">
-        <figure>
-          <img src="assets/img/dem/se87426-s0825.png" alt="End-state shear snapshot at time step s0825 showing fracture pattern." loading="lazy" />
-          <figcaption>(a) s0825</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/img/dem/se87426-s1923.png" alt="End-state shear snapshot at time step s1923 showing fracture pattern." loading="lazy" />
-          <figcaption>(b) s1923</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/img/dem/se87426-s2283.png" alt="End-state shear snapshot at time step s2283 showing fracture pattern." loading="lazy" />
-          <figcaption>(c) s2283</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/img/dem/se87426-s2893.png" alt="End-state shear snapshot at time step s2893 showing fracture pattern." loading="lazy" />
-          <figcaption>(d) s2893</figcaption>
-        </figure>
-        <figure>
-          <img src="assets/img/dem/se87426-s9834.png" alt="End-state shear snapshot at time step s9834 showing fracture pattern." loading="lazy" />
-          <figcaption>(e) s9834</figcaption>
-        </figure>
-      </div>
-    </div>
 
     <hr class="sep" />
 
