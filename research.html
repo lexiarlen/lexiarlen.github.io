@@ -163,7 +163,7 @@
     <div class="section" id="fig-dem">
       <h2>1) What is a discrete-element sea-ice model?</h2>
       <p style="max-width:90ch;">
-        Rather than evolving an equation describing bulk sea ice behavior on a a predefined grid, discrete element models solve the equations of motion 
+        Rather than evolving an equation describing bulk sea ice behavior on a predefined grid, discrete element models solve the equations of motion 
         for each element based on particle interaction rules. By starting with a bonded assembly of particles, fine-scale fractures emerge naturally and no 
         assumptions about continuous fields need to be made. 
       </p>
@@ -182,9 +182,11 @@
     </div>
 
     <div class="section" id="fig-localization">
-      <h2>2) [text]</h2>
+      <h2>2) The size effect</h2>
       <p style="max-width:90ch;">
-        [text]
+        Larger materials are weaker due to a heightened probability of weaker defects, known as the statistical size effect. 
+          Similarly, discrete element simulations with few elements will be stronger than those with more elements, but this influence is expected to plateau at 
+          some granularity: the ratio of element size to domain size. 
       </p>
 
       <div class="figure">
@@ -194,12 +196,10 @@
           loading="lazy"
         />
         <p class="caption">
-          <strong>Figure:</strong> Larger materials are weaker due to a heightened probability of weaker defects, known as the stastical size effect. 
-          Simalarily, discrete element simulations with few elements will be stronger than those with more elements, but this influence is expected to plateau at 
-          some granularity: the ratio of element size to domain size. (a) Ensemble-averaged shear stress–strain responses for varying granularity. 
-          Peak shear stress as a function of granularity. The red shaded region is our chosen granularity threshold to minimize the influence of the size effect. 
+          <strong>Figure:</strong> (a) Ensemble-averaged shear stress–strain responses for varying granularity. 
+          (b) Peak shear stress as a function of granularity. The red shaded region is our chosen granularity threshold to minimize the influence of the size effect. 
           For subplots (a) and (b) shaded regions and error bars, respectively, indicate the standard error across five ensemble members per granularity, each initialized 
-          from a distinct random particle packing.}
+          from a distinct random particle packing.
         </p>
       </div>
     </div>
@@ -208,7 +208,8 @@
     <div class="section" id="longer_tilt_damage">
       <h2>2) Deformation localized in space and time under low strain rate. </h2>
       <p style="max-width:90ch;">
-        [text]
+         Sea ice deformation is localized and intermittent. Here, we run a simple shear simulation which reveals that our simple model
+          creates ice that shares these same deformation characteristics.
       </p>
 
       <div class="figure">
@@ -218,8 +219,7 @@
           loading="lazy"
         />
         <p class="caption">
-          <strong>Figure:</strong> Sea ice deformation is localized and intermittment. Here, we run a simple shear simulation which reveals that our simple model
-          creates ice that shares these same deformation characteristics. (a) Histogram time series illustrating how bond breaking occurs in isolated events. 
+          <strong>Figure:</strong> (a) Histogram time series illustrating how bond breaking occurs in isolated events. 
           (b) Time series of the damage rate (black) corresponding with peaks in shear stress (green). (c) The total change 
           in coordination number for each particle at the end of the 43 day simulation.
         </p>
@@ -263,9 +263,9 @@
 
     <!-- 3) Arch formation/collapse -->
     <div class="section" id="fig-arch">
-      <h2>3) [text]</h2>
+      <h2>3) Ice arch formation and collapse </h2>
       <p style="max-width:90ch;">
-        [text]
+        In a canonical experiment, northerly wind speeds are increased linearly over 36 hours. 
       </p>
 
       <div class="figure">
@@ -284,7 +284,7 @@
 
     <!-- 4) Regime collapse -->
     <div class="section" id="fig-regimes">
-      <h2>4) [text]</h2>
+      <h2>4) Regimes as functions of internal parameters from idealized channel simulations</h2>
       <p style="max-width:90ch;">
         [text]
       </p>
