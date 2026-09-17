@@ -1,155 +1,137 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lexi Arlen — Home</title>
-  <meta name="description" content="Lexi Arlen — PhD student at Stanford studying climate change in the polar regions focusing on sea ice dynamics." />
-  <link rel="stylesheet" href="assets/css/style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lexi Arlen</title>
+<meta name="description" content="Lexi Arlen is a PhD candidate in Earth System Science at Stanford University, modeling sea ice dynamics with bonded discrete element models.">
+<link rel="canonical" href="https://lexiarlen.github.io/index.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lexi Arlen">
+<meta property="og:title" content="Lexi Arlen">
+<meta property="og:description" content="Lexi Arlen is a PhD candidate in Earth System Science at Stanford University, modeling sea ice dynamics with bonded discrete element models.">
+<meta property="og:url" content="https://lexiarlen.github.io/index.html">
+<meta property="og:image" content="https://lexiarlen.github.io/assets/img/hero.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="nav">
-    <div class="nav-inner">
-      <div class="brand">
-        <!-- Snowflake icon -->
-        <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M4.93 19.07l14.14-14.14"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-          />
-        </svg>
+<a class="skip" href="#main">Skip to content</a>
 
-        <!-- Name -->
-        <div>Lexi Arlen</div>
-      </div>
+<header class="site-header">
+  <div>
+    <p class="brand">
+      <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M4.93 19.07l14.14-14.14"
+              fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <a href="index.html">Lexi Arlen</a>
+    </p>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="fieldwork.html">Fieldwork</a>
+      <a href="adventures.html">Adventures</a>
+    </nav>
+  </div>
+</header>
 
-      <div class="nav-links">
-        <a class="active" href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="fieldwork.html">Fieldwork</a>
-        <a href="adventures.html">Adventures</a>
-      </div>
+<main id="main">
+
+  <div class="intro">
+    <div>
+      <h1>Lexi Arlen</h1>
+      <p class="lede">Modeling sea ice dynamics across scales.</p>
+
+      <p>
+        I am a PhD candidate in Earth System Science at Stanford University, in the
+        Polar Ocean Dynamics Group led by Prof. Earle Wilson. I develop bonded
+        discrete element models for process-based studies of sea ice dynamics, and I
+        am broadly interested in how small-scale dynamics shape large-scale climate
+        trends.
+      </p>
+
+      <p class="links">
+        <a href="assets/docs/cv.pdf">CV (PDF)</a> &middot;
+        <a href="https://scholar.google.com/citations?user=51YTITEAAAAJ&amp;hl=en">Google Scholar</a> &middot;
+        <a href="https://orcid.org/0000-0002-4500-6399">ORCID</a> &middot;
+        <a href="https://github.com/lexiarlen">GitHub</a> &middot;
+        <a href="https://www.linkedin.com/in/alexisarlen">LinkedIn</a>
+      </p>
+
+      <p class="btn-row">
+        <a class="btn" href="mailto:arlenlex@stanford.edu">Email me</a>
+      </p>
     </div>
+
+    <img src="assets/img/me.jpeg" alt="Lexi Arlen" width="774" height="1014">
   </div>
 
-  <div class="container">
+  <figure class="wide">
+    <img src="assets/img/hero.jpeg"
+         alt="TODO: describe this photo — which ship, which sea, which year"
+         width="1280" height="853" loading="eager" fetchpriority="high">
+    <figcaption>TODO: caption this banner &mdash; e.g. &ldquo;Aboard the R/V Sikuliaq in the Chukchi Sea, July 2023.&rdquo;</figcaption>
+  </figure>
 
-    <div class="hero hero-stack">
-      <!-- Top content: photo left, everything else right -->
-      <div class="hero-content">
-        <div class="hero-copy">
+  <h2>Research</h2>
+  <p>
+    Sea ice mediates ocean heat uptake, buffers ice shelves from ocean waves, and
+    hosts the primary producers at the base of the polar food web &mdash; yet climate
+    models still struggle to reproduce its trends, in part because they treat it as a
+    continuous medium. I build discrete element models that resolve fracturing and
+    floe&ndash;floe interaction directly, so the subgrid-scale physics can be
+    parameterized rather than assumed.
+  </p>
+  <p><a href="research.html">More about the model &rarr;</a></p>
 
-          <div class="hero-intro">
-            <img
-              src="assets/img/me.jpeg"
-              alt="Lexi Arlen portrait"
-              class="hero-headshot"
-            />
+  <h2>Selected publications</h2>
+  <ol class="pubs">
+    <li>
+      Wilson, E.&nbsp;A., <span class="me">Arlen, L.</span>, &amp; Campbell, E.&nbsp;C. (2026).
+      <span class="pub-title">Recent extremes in Antarctic sea ice extent modulated by ocean heat ventilation.</span>
+      <cite class="pub-venue">Proceedings of the National Academy of Sciences</cite>, 123(14), e2530832123.
+      <p class="pub-meta"><a href="https://doi.org/10.1073/pnas.2530832123">doi:10.1073/pnas.2530832123</a></p>
+    </li>
+    <li>
+      <span class="me">Arlen, L.</span>, Wilson, E.&nbsp;A., Dansereau, V., Lai, C.-Y., &amp; Meng, Y. (2026).
+      <span class="pub-title">A minimal bonded discrete element model for sea ice breakup.</span>
+      <cite class="pub-venue">EGUsphere</cite> [preprint].
+      <p class="pub-meta"><a href="https://doi.org/10.5194/egusphere-2026-3166">doi:10.5194/egusphere-2026-3166</a></p>
+    </li>
+  </ol>
+  <p><a href="publications.html">All publications &rarr;</a></p>
 
-            <div class="hero-text">
-              <h1>Modeling sea ice dynamics across scales.</h1>
+  <h2>Education</h2>
+  <ul>
+    <li>PhD in Earth System Science, Stanford University &mdash; in progress</li>
+    <li>BA in Mathematics and BA in Geophysics, Washington University in St.&nbsp;Louis, 2022</li>
+  </ul>
 
-              <p>
-                Hello! I’m a 4th-year PhD student in Earth System Science at Stanford University in the Polar Ocean Dynamics
-                Group led by Professor Earle Wilson. I have developed bonded discrete element model for process-based studies of
-                sea ice dynamics. I’m broadly interested in how small-scale local dynamics shape larger-scale climate
-                trends.
-              </p>
+  <h2>Awards</h2>
+  <ul>
+    <li>NSF Graduate Research Fellowship, 2022</li>
+    <li>Best Student Poster, AMS 18th Conference on Polar Meteorology and Oceanography, 2025</li>
+    <li>McGee Levorson Grant, 2023</li>
+  </ul>
 
-              <div class="badges">
-                <a class="badge" href="assets/docs/cv.pdf" target="_blank" rel="noopener">
-                  CV <span>(PDF)</span>
-                </a>
-                <a class="badge" href="https://scholar.google.com/citations?user=51YTITEAAAAJ&hl=en" target="_blank" rel="noopener">
-                  Google Scholar
-                </a>
-                <a class="badge" href="https://github.com/lexiarlen" target="_blank" rel="noopener">
-                  GitHub
-                </a>
-                <a class="badge" href="https://www.linkedin.com/in/alexisarlen" target="_blank" rel="noopener">
-                  LinkedIn
-                </a>
-              </div>
-            </div>
-          </div>
+</main>
 
-        </div>
-      </div>
-
-      <!-- Bottom banner: boat image -->
-      <div class="hero-banner">
-        <img src="assets/img/hero.jpeg" alt="Sea ice / polar research visual" />
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Explore more</h2>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Discrete Element Model</h3>
-          <p>
-            Inquiries with a minimal bonded particle discrete element model for process-based studies of sea ice dynamics.
-          </p>
-          <div class="meta">
-            <a href="research.html#project-a">Read more →</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Teaching</h3>
-          <p>
-            Courses, Mentoring, and TAing.
-          </p>
-          <div class="meta">
-            <a href="teaching.html">Read more →</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Fieldwork</h3>
-          <p>
-            Past field experiences.
-          </p>
-          <div class="meta">
-            <a href="fieldwork.html">Read more →</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--
-    <div class="section">
-      <h2>Latest visuals</h2>
-      <p>A few recent favorites from simulations and the field.</p>
-
-      <div class="gallery">
-        <a class="thumb" href="fieldwork.html#gallery">
-          <img src="assets/img/photo1.jpg" alt="Visual 1" />
-          <div class="cap">Caption: what we’re looking at</div>
-        </a>
-        <a class="thumb" href="fieldwork.html#gallery">
-          <img src="assets/img/photo2.jpg" alt="Visual 2" />
-          <div class="cap">Caption: one clear takeaway</div>
-        </a>
-        <a class="thumb" href="fieldwork.html#gallery">
-          <img src="assets/img/photo3.jpg" alt="Visual 3" />
-          <div class="cap">Caption: click for the gallery</div>
-        </a>
-      </div>
-    </div>
-    -->
-
+<footer class="site-footer">
+  <div>
+    <p>Lexi Arlen &middot; Earth System Science, Stanford University</p>
+    <p>
+      <a href="mailto:arlenlex@stanford.edu">arlenlex@stanford.edu</a> &middot;
+      <a href="https://scholar.google.com/citations?user=51YTITEAAAAJ&amp;hl=en">Google Scholar</a> &middot;
+      <a href="https://orcid.org/0000-0002-4500-6399">ORCID</a> &middot;
+      <a href="https://github.com/lexiarlen">GitHub</a> &middot;
+      <a href="https://www.linkedin.com/in/alexisarlen">LinkedIn</a>
+    </p>
+    <p>Last updated September 2026.</p>
   </div>
-
-  <script>
-    // If you ever add an element with id="y" for the year, this will work.
-    const y = document.getElementById("y");
-    if (y) y.textContent = new Date().getFullYear();
-  </script>
+</footer>
 </body>
 </html>
