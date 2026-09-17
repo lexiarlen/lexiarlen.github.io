@@ -186,7 +186,7 @@ figure img{ background:var(--wash) }
 
 .gallery{
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));
+  grid-template-columns:repeat(auto-fill,minmax(min(15rem,100%),1fr));
   gap:2rem 1.5rem;
   margin:1.5rem 0 0; padding:0;
   list-style:none;
@@ -200,7 +200,7 @@ figure img{ background:var(--wash) }
 .gallery figcaption{ margin-top:.45rem }
 
 /* wider cells for figures carrying axis labels and fine detail */
-.gallery-figures{ grid-template-columns:repeat(auto-fill,minmax(20rem,1fr)) }
+.gallery-figures{ grid-template-columns:repeat(auto-fill,minmax(min(20rem,100%),1fr)) }
 .gallery-figures img{ aspect-ratio:auto; object-fit:contain }
 
 /* ---------- entries (teaching, mentoring, fieldwork blocks) ---------- */
