@@ -23,8 +23,7 @@
   --t-2:  1.625rem;   /* h2 */
   --t-3:  clamp(1.9rem, 1.4rem + 1.6vw, 2.5rem); /* h1 */
 
-  --measure: 40rem;   /* prose column ≈ 68 characters */
-  --wide:    68rem;   /* galleries, banners, header/footer */
+  --measure: 56rem;   /* the one content width: text, figures, galleries, nav */
   --gutter:  clamp(1.25rem, 4vw, 2rem);
 }
 
@@ -83,17 +82,9 @@ a:hover{ text-decoration-color:currentColor }
 /* ---------- layout: one breakout grid ---------- */
 
 main{
-  display:grid;
-  grid-template-columns:
-    minmax(var(--gutter),1fr)
-    minmax(0,var(--measure))
-    minmax(var(--gutter),1fr);
-}
-main > *{ grid-column:2 }
-main > .wide{
-  grid-column:1 / -1;
-  width:min(var(--wide), calc(100% - 2 * var(--gutter)));
+  max-width:var(--measure);
   margin-inline:auto;
+  padding:0 var(--gutter);
 }
 
 /* ---------- header / nav ---------- */
@@ -101,7 +92,7 @@ main > .wide{
 .site-header{ border-bottom:1px solid var(--rule); margin-bottom:2.75rem }
 .site-header > div,
 .site-footer > div{
-  max-width:var(--wide);
+  max-width:var(--measure);
   margin-inline:auto;
   padding:1.1rem var(--gutter);
 }
@@ -186,8 +177,8 @@ figure img{ background:var(--wash) }
 
 .gallery{
   display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(min(15rem,100%),1fr));
-  gap:2rem 1.5rem;
+  grid-template-columns:repeat(auto-fill,minmax(min(16rem,100%),1fr));
+  gap:2rem 1.25rem;
   margin:1.5rem 0 0; padding:0;
   list-style:none;
 }
