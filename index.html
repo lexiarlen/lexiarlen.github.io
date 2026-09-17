@@ -19,56 +19,56 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div>
-    <p class="brand">
-      <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
+<div class="layout">
+
+  <aside class="sidebar">
+    <img class="sb-photo" src="assets/img/me.jpeg" alt="Lexi Arlen"
+         width="774" height="1014">
+
+    <p class="sb-name">
+      <svg class="sb-icon" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M4.93 19.07l14.14-14.14"
               fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
       </svg>
-      <a href="index.html">Lexi Arlen</a>
+      Lexi Arlen
     </p>
-    <nav class="site-nav" aria-label="Main">
+
+    <p class="sb-role">
+      PhD Candidate<br>
+      Earth System Science<br>
+      Stanford University
+    </p>
+
+    <ul class="sb-links">
+      <li><a href="mailto:arlenlex@stanford.edu">arlenlex@stanford.edu</a></li>
+      <li><a href="assets/docs/cv.pdf">CV (PDF)</a></li>
+      <li><a href="https://scholar.google.com/citations?user=51YTITEAAAAJ&amp;hl=en">Google Scholar</a></li>
+      <li><a href="https://orcid.org/0000-0002-4500-6399">ORCID</a></li>
+      <li><a href="https://github.com/lexiarlen">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/alexisarlen">LinkedIn</a></li>
+    </ul>
+  </aside>
+
+  <div class="col">
+
+    <nav class="tabs" aria-label="Main">
       <a href="index.html" aria-current="page">Home</a>
       <a href="research.html">Research</a>
-      <a href="publications.html">Publications</a>
       <a href="teaching.html">Teaching</a>
       <a href="fieldwork.html">Fieldwork</a>
       <a href="adventures.html">Adventures</a>
     </nav>
-  </div>
-</header>
 
 <main id="main">
 
-  <div class="intro">
-    <div>
-      <h1>Lexi Arlen</h1>
-      <p class="lede">Modeling sea ice dynamics across scales.</p>
+  <h1>Modeling sea ice dynamics across scales</h1>
 
-      <p>
-        I am a PhD candidate in Earth System Science at Stanford University, in the
-        Polar Ocean Dynamics Group led by Prof. Earle Wilson. I develop bonded
-        discrete element models for process-based studies of sea ice dynamics, and I
-        am broadly interested in how small-scale dynamics shape large-scale climate
-        trends.
-      </p>
-
-      <p class="links">
-        <a href="assets/docs/cv.pdf">CV (PDF)</a> &middot;
-        <a href="https://scholar.google.com/citations?user=51YTITEAAAAJ&amp;hl=en">Google Scholar</a> &middot;
-        <a href="https://orcid.org/0000-0002-4500-6399">ORCID</a> &middot;
-        <a href="https://github.com/lexiarlen">GitHub</a> &middot;
-        <a href="https://www.linkedin.com/in/alexisarlen">LinkedIn</a>
-      </p>
-
-      <p class="btn-row">
-        <a class="btn" href="mailto:arlenlex@stanford.edu">Email me</a>
-      </p>
-    </div>
-
-    <img src="assets/img/me.jpeg" alt="Lexi Arlen" width="774" height="1014">
-  </div>
+  <p>
+    I am a PhD candidate in Earth System Science at Stanford University, in the Polar
+    Ocean Dynamics Group led by Prof. Earle Wilson. I develop bonded discrete element
+    models for process-based studies of sea ice dynamics, and I am broadly interested
+    in how small-scale dynamics shape large-scale climate trends.
+  </p>
 
   <figure>
     <img src="assets/img/hero.jpeg"
@@ -77,33 +77,78 @@
     <figcaption>An ice station alongside the R/V Sikuliaq, Chukchi Sea, summer 2023.</figcaption>
   </figure>
 
-  <h2>Research</h2>
-  <p>
-    Sea ice mediates ocean heat uptake, buffers ice shelves from ocean waves, and
-    hosts the primary producers at the base of the polar food web &mdash; yet climate
-    models still struggle to reproduce its trends, in part because they treat it as a
-    continuous medium. I build discrete element models that resolve fracturing and
-    floe&ndash;floe interaction directly, so the subgrid-scale physics can be
-    parameterized rather than assumed.
-  </p>
-  <p><a href="research.html">More about the model &rarr;</a></p>
+  <h2>Research interests</h2>
 
-  <h2>Selected publications</h2>
-  <ol class="pubs">
-    <li>
-      Wilson, E.&nbsp;A., <span class="me">Arlen, L.</span>, &amp; Campbell, E.&nbsp;C. (2026).
-      <span class="pub-title">Recent extremes in Antarctic sea ice extent modulated by ocean heat ventilation.</span>
-      <cite class="pub-venue">Proceedings of the National Academy of Sciences</cite>, 123(14), e2530832123.
-      <p class="pub-meta"><a href="https://doi.org/10.1073/pnas.2530832123">doi:10.1073/pnas.2530832123</a></p>
-    </li>
-    <li>
-      <span class="me">Arlen, L.</span>, Wilson, E.&nbsp;A., Dansereau, V., Lai, C.-Y., &amp; Meng, Y. (2026).
-      <span class="pub-title">A minimal bonded discrete element model for sea ice breakup.</span>
-      <cite class="pub-venue">EGUsphere</cite> [preprint].
-      <p class="pub-meta"><a href="https://doi.org/10.5194/egusphere-2026-3166">doi:10.5194/egusphere-2026-3166</a></p>
-    </li>
-  </ol>
-  <p><a href="publications.html">All publications &rarr;</a></p>
+  <p>
+    Sea ice is a critical component of the Earth system. It mediates ocean heat
+    uptake, drives the global overturning circulation, buffers vulnerable ice shelves
+    from ocean waves, and serves as habitat for organisms from the primary producers
+    at the base of the food web up through keystone species like the polar bear.
+    Through polar amplification, climate change is affecting the polar regions more
+    than anywhere else on Earth.
+  </p>
+
+  <p>
+    Despite the urgent need for accurate predictions of the future sea ice state,
+    current climate models struggle to reproduce sea ice trends on seasonal and
+    decadal timescales. These models simulate sea ice as a continuous medium, despite
+    the discontinuities that arise from fracturing and floe&ndash;floe interaction.
+    Discrete element models (DEMs) resolve those discontinuities directly, which
+    makes them valuable tools for developing parameterizations of the subgrid-scale
+    physics that set the sea ice momentum budget in climate models.
+  </p>
+
+  <p>
+    Because DEMs resolve interactions between individual elements, they are typically
+    expensive to run and carry many unconstrained parameters. In my work I develop,
+    calibrate, and evaluate a <em>minimal</em> bonded discrete element model for
+    process-based studies &mdash; trading some physics for a small parameter space
+    and real computational efficiency.
+  </p>
+
+  <h2>A minimal bonded discrete element model</h2>
+
+  <figure>
+    <!-- Video is 600x450; the poster is square (2000x2000), so it letterboxes.
+         Re-export the poster at 600x450 to remove the side bars. -->
+    <video controls preload="none" width="600" height="450"
+           poster="assets/img/dem/end_shear55952_915.png">
+      <source src="assets/img/dem/long_shear_web.mp4" type="video/mp4">
+      Your browser does not support embedded video.
+      <a href="assets/img/dem/long_shear_web.mp4">Download the simulation (MP4)</a>.
+    </video>
+    <figcaption>
+      Bonded elements under simple shear over 42 simulated days. Bonds break along
+      localized failure planes rather than deforming uniformly.
+    </figcaption>
+  </figure>
+
+  <p>
+    The model and its calibration are described in
+    <a href="research.html">the preprint</a>, and the code is
+    <a href="https://github.com/lexiarlen/P1-model-dev">on GitHub</a>.
+  </p>
+
+  <!--
+       FIGURES — add the updated versions from the paper below this comment.
+
+       One figure on its own:
+
+         <figure>
+           <img src="assets/img/dem/YOURFILE.png"
+                alt="DESCRIBE THE AXES AND WHAT THE READER SHOULD SEE"
+                width="0000" height="0000" loading="lazy" decoding="async">
+           <figcaption>CAPTION.</figcaption>
+         </figure>
+
+       Two or more side by side — wrap them in:
+
+         <div class="gallery gallery-figures"> ...figures... </div>
+
+       Get the width and height with:
+
+         sips -g pixelWidth -g pixelHeight assets/img/dem/YOURFILE.png
+  -->
 
   <h2>Education</h2>
   <ul>
@@ -111,27 +156,17 @@
     <li>BA in Mathematics and BA in Geophysics, Washington University in St.&nbsp;Louis, 2022</li>
   </ul>
 
-  <h2>Awards</h2>
-  <ul>
-    <li>NSF Graduate Research Fellowship, 2022</li>
-    <li>Best Student Poster, AMS 18th Conference on Polar Meteorology and Oceanography, 2025</li>
-    <li>McGee Levorson Grant, 2023</li>
-  </ul>
-
 </main>
 
-<footer class="site-footer">
-  <div>
-    <p>Lexi Arlen &middot; Earth System Science, Stanford University</p>
-    <p>
-      <a href="mailto:arlenlex@stanford.edu">arlenlex@stanford.edu</a> &middot;
-      <a href="https://scholar.google.com/citations?user=51YTITEAAAAJ&amp;hl=en">Google Scholar</a> &middot;
-      <a href="https://orcid.org/0000-0002-4500-6399">ORCID</a> &middot;
-      <a href="https://github.com/lexiarlen">GitHub</a> &middot;
-      <a href="https://www.linkedin.com/in/alexisarlen">LinkedIn</a>
-    </p>
-    <p>Last updated September 2026.</p>
+    <footer class="site-footer">
+      <p>
+        Lexi Arlen &middot; Earth System Science, Stanford University &middot;
+        <a href="mailto:arlenlex@stanford.edu">arlenlex@stanford.edu</a>
+      </p>
+      <p>Last updated September 2026.</p>
+    </footer>
+
   </div>
-</footer>
+</div>
 </body>
 </html>
