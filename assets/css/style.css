@@ -101,11 +101,9 @@ a:hover{ text-decoration-color:currentColor }
   background:var(--wash); display:block;
 }
 .sb-name{
-  display:flex; align-items:baseline; gap:.45rem;
   font:600 var(--t-1)/1.2 var(--serif);
   margin:.95rem 0 .4rem;
 }
-.sb-icon{ width:12px; height:12px; color:var(--accent); opacity:.75; flex:none }
 .sb-role{
   font-family:var(--sans); font-size:var(--t--1); line-height:1.5;
   color:var(--ink-muted); margin:0 0 1.15rem;
