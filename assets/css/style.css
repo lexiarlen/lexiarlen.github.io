@@ -108,6 +108,18 @@ a:hover{ text-decoration-color:currentColor }
   font-family:var(--sans); font-size:var(--t--1); line-height:1.5;
   color:var(--ink-muted); margin:0 0 1.15rem;
 }
+.sb-contact{ margin:0 0 1.15rem }
+
+.btn{
+  display:inline-block;
+  font-family:var(--sans); font-size:var(--t--1); line-height:1.2;
+  padding:.5rem 1.05rem;
+  border:1px solid var(--accent); border-radius:3px;
+  background:var(--accent); color:#fff;
+  text-decoration:none;
+}
+.btn:hover{ background:var(--accent-dark); color:#fff }
+
 .sb-links{
   list-style:none; margin:0; padding:0;
   font-family:var(--sans); font-size:var(--t--1);
@@ -210,7 +222,7 @@ blockquote{
     position:static;
     display:grid;
     grid-template-columns:6.5rem minmax(0,1fr);
-    grid-template-areas:"photo name" "photo role" "links links";
+    grid-template-areas:"photo name" "photo role" "contact contact" "links links";
     gap:0 1.25rem;
     padding-bottom:1.5rem;
     border-bottom:1px solid var(--rule);
@@ -218,6 +230,7 @@ blockquote{
   .sb-photo{ grid-area:photo; align-self:start }
   .sb-name{ grid-area:name; margin:0 0 .3rem }
   .sb-role{ grid-area:role; margin:0 }
+  .sb-contact{ grid-area:contact; margin:1rem 0 0 }
   .sb-links{
     grid-area:links; margin-top:1.1rem;
     display:flex; flex-wrap:wrap; gap:.35rem 1.15rem;
