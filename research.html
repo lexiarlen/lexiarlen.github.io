@@ -1,155 +1,102 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lexi Arlen — Research</title>
-  <meta
-    name="description"
-    content="A fast, plain-language walkthrough of a minimal discrete-element sea-ice model—shown through figures (plus an optional video)."
-  />
-  <link rel="stylesheet" href="assets/css/style.css" />
-
-  <style>
-    .hero {
-      border-radius: 18px;
-      overflow: hidden;
-      margin-top: 18px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-      background: rgba(255,255,255,0.6);
-    }
-    .hero img {
-      display:block;
-      width: 100%;
-      height: clamp(180px, 34vh, 340px);
-      object-fit: cover;
-    }
-    .hero .hero-text{
-      padding: 14px 16px 16px 16px;
-    }
-
-    .figure { margin-top: 12px; }
-    .figure img {
-      width: 100%;
-      height: auto;
-      border-radius: 14px;
-      display:block;
-    }
-    .caption {
-      margin-top: 10px;
-      opacity: 0.92;
-      max-width: 90ch;
-    }
-
-    .thumb-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 10px;
-      margin-top: 12px;
-    }
-    @media (max-width: 980px) { .thumb-grid { grid-template-columns: repeat(3, 1fr); } }
-    @media (max-width: 640px) { .thumb-grid { grid-template-columns: repeat(2, 1fr); } }
-
-    .thumb-grid figure { margin: 0; }
-    .thumb-grid img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      display:block;
-    }
-    .thumb-grid figcaption {
-      font-size: 0.85em;
-      margin-top: 6px;
-      opacity: 0.85;
-    }
-
-    .video { margin-top: 12px; border-radius: 14px; overflow: hidden; }
-    .video video { width: 100%; height: auto; display:block; border-radius: 14px; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research &middot; Lexi Arlen</title>
+<meta name="description" content="Publications and preprints by Lexi Arlen on sea ice dynamics, discrete element modeling, and nonlinear waves.">
+<link rel="canonical" href="https://lexiarlen.github.io/research.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lexi Arlen">
+<meta property="og:title" content="Research &middot; Lexi Arlen">
+<meta property="og:description" content="Publications and preprints by Lexi Arlen on sea ice dynamics, discrete element modeling, and nonlinear waves.">
+<meta property="og:url" content="https://lexiarlen.github.io/research.html">
+<meta property="og:image" content="https://lexiarlen.github.io/assets/img/hero.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-  <!-- NAV -->
-  <div class="nav">
-    <div class="nav-inner">
-      <div class="brand">
-        <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path
-            d="M12 2v20M4.93 4.93l14.14 14.14M2 12h20M4.93 19.07l14.14-14.14"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-          />
-        </svg>
-        <div>Lexi Arlen</div>
-      </div>
+<a class="skip" href="#main">Skip to content</a>
 
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a class="active" href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="fieldwork.html">Fieldwork</a>
-        <a href="adventures.html">Adventures</a>
-      </div>
-    </div>
-  </div>
+<div class="layout">
 
-  <div class="container">
-    <!-- HERO / BANNER -->
-    <div class="hero">
-      <!-- TODO: replace with your banner photo path -->
-      <img
-        src="assets/img/dem/floes.jpg"
-        alt="Sea ice floes viewed from above."
-        loading="eager"
-        fetchpriority="high"
-      />
-      <div class="hero-text">
-        <h1 style="margin:0;">A minimal bonded discrete element model for sea ice</h1>
-        <h3 style="margin:0;">Page still under construction!</h3>
-        <p style="margin:8px 0 0 0; max-width:90ch;">
-        Sea ice is a critical component of the Earth system, mediating ocean heat uptake, driving the global ocean overturning circulation,
-        buffering vulnerable ice shelves from ocean waves, and serving as a key habitat for the 
-        primary producers at the bottom of the food chain up through keystone species like the polar 
-        bear. Through polar amplification, climate change is impacting the polar regions more than 
-        anywhere else in the world. Despite the urgent need for accurate predictions of the future sea ice state,
-        current climate models struggle to reproduce sea ice trends on seasonal and decadal timescales. 
-        These models simulate sea ice as a continuous medium despite the discontinuities arising from fracturing 
-        and floe-floe interactions. Discrete element models (DEMs) can directly resolve these discontinuities, 
-        making them valuable tools for developing parameterizations of subgrid-scale physics to improve 
-        the sea ice momentum budget in climate models. Because DEMs resolve interactions between individual discrete 
-        elements, they are typically computationally expensive and contain many 
-        unconstrained parameters. In this work, we develop, calibrate, and evaluate
-        the performance of a minimal bonded discrete element model for process-based studies, 
-        foregoing some physics for a small parameter space and computational efficiency.
-        </p>
-      </div>
-    </div>
+  <aside class="sidebar">
+    <img class="sb-photo" src="assets/img/me.jpeg" alt="Lexi Arlen"
+         width="774" height="1014">
 
-    <!-- OPTIONAL: MP4 slot (kept, but lightweight) -->
-    <div class="section" id="video-shear">
-      <h2>Click here to watch a video of the 42 day simple shear simulation!</h2>
-      <div class="video card">
-        <video controls preload="none" poster="assets/img/dem/end_shear55952_915.png">
-          <source src="assets/img/dem/long_shear_web.mp4" type="video/mp4" />
-          Sorry—your browser doesn’t support embedded video.
-        </video>
-      </div>
-    </div>
+    <p class="sb-name">Lexi Arlen</p>
 
-    <hr class="sep" />
+    <p class="sb-role">
+      PhD Candidate<br>
+      Earth System Science<br>
+      Stanford University
+    </p>
 
-    <!-- LINKS -->
-    <div class="section" id="links">
-      <h2>Links</h2>
-      <p>
-        <a href="https://github.com/lexiarlen/P1-model-dev" target="_blank" rel="noopener">Code</a>
-        · <a href="#" target="_blank" rel="noopener">Paper / Preprint</a>
-        · <a href="#" target="_blank" rel="noopener">Dataset</a>
+    <ul class="sb-links">
+      <li><a href="mailto:arlenlex@stanford.edu">arlenlex@stanford.edu</a></li>
+      <li><a href="assets/docs/cv.pdf">CV (PDF)</a></li>
+      <li><a href="https://scholar.google.com/citations?user=51YTITEAAAAJ&amp;hl=en">Google Scholar</a></li>
+      <li><a href="https://orcid.org/0000-0002-4500-6399">ORCID</a></li>
+      <li><a href="https://github.com/lexiarlen">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/alexisarlen">LinkedIn</a></li>
+    </ul>
+  </aside>
+
+  <div class="col">
+
+    <nav class="tabs" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="research.html" aria-current="page">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="fieldwork.html">Fieldwork</a>
+      <a href="adventures.html">Adventures</a>
+    </nav>
+
+<main id="main">
+
+  <h1>Research</h1>
+  <h2>Peer-reviewed publications</h2>
+  <ol class="pubs">
+    <li>
+      Wilson, E.&nbsp;A., <span class="me">Arlen, L.</span>, &amp; Campbell, E.&nbsp;C. (2026).
+      <span class="pub-title">Recent extremes in Antarctic sea ice extent modulated by ocean heat ventilation.</span>
+      <cite class="pub-venue">Proceedings of the National Academy of Sciences</cite>, 123(14), e2530832123.
+      <p class="pub-meta"><a href="https://doi.org/10.1073/pnas.2530832123">doi:10.1073/pnas.2530832123</a></p>
+    </li>
+    <li>
+      Nabelek, P., <span class="me">Arlen, A.</span>, &amp; Fromcke, T. (2024).
+      <span class="pub-title">On periodic and finite genus solutions to the integrable Kaup&ndash;Broer system for capillary waves.</span>
+      <cite class="pub-venue">Applied Numerical Mathematics</cite>, 199, 123&ndash;135.
+      <p class="pub-meta"><a href="https://doi.org/10.1016/j.apnum.2023.05.019">doi:10.1016/j.apnum.2023.05.019</a></p>
+    </li>
+  </ol>
+  <p class="small">Work before 2025 appears under A. Arlen.</p>
+
+  <h2>Preprints and manuscripts in review</h2>
+  <ol class="pubs pubs-cont">
+    <li>
+      <span class="me">Arlen, L.</span>, Wilson, E.&nbsp;A., Dansereau, V., Lai, C.-Y., &amp; Meng, Y. (2026).
+      <span class="pub-title">A minimal bonded discrete element model for sea ice breakup.</span>
+      <cite class="pub-venue">EGUsphere</cite> [preprint], 1&ndash;34.
+      <p class="pub-meta">
+        <a href="https://doi.org/10.5194/egusphere-2026-3166">doi:10.5194/egusphere-2026-3166</a> &middot;
+        <a href="https://github.com/lexiarlen/P1-model-dev">Code</a>
       </p>
-    </div>
+    </li>
+  </ol>
+
+</main>
+
+    <footer class="site-footer">
+      <p>
+        Lexi Arlen &middot; Earth System Science, Stanford University &middot;
+        <a href="mailto:arlenlex@stanford.edu">arlenlex@stanford.edu</a>
+      </p>
+      <p>Last updated September 2026.</p>
+    </footer>
 
   </div>
+</div>
 </body>
 </html>
