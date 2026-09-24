@@ -92,6 +92,10 @@ a:hover{ text-decoration-color:currentColor }
   align-items:start;
 }
 
+/* publication numbering runs continuously across every .pubs list in the
+   content column, so adding or removing a paper needs no CSS change */
+.col{ counter-reset:pub }
+
 /* ---------- sidebar (persistent identity + contact) ---------- */
 
 .sidebar{ position:sticky; top:2.5rem }
@@ -200,14 +204,13 @@ blockquote{
 
 /* ---------- publications ---------- */
 
-.pubs{ list-style:none; margin:1.4rem 0 0; padding:0; counter-reset:pub }
+.pubs{ list-style:none; margin:1.4rem 0 0; padding:0 }
 .pubs > li{ position:relative; padding-left:2.25rem; margin:0 0 1.8rem }
 .pubs > li::before{
   counter-increment:pub; content:counter(pub) ".";
   position:absolute; left:0; top:.15rem;
   font-family:var(--sans); font-size:var(--t--1); color:var(--ink-muted);
 }
-.pubs-cont{ counter-reset:pub 2 }
 .pub-title{ font-weight:600 }
 .pub-venue{ font-style:italic }
 .pub-meta{ margin:.3rem 0 0 }
